@@ -132,7 +132,6 @@ export default function App() {
             </a>
               <a href="#contact" className="btn btn-primary">Schedule a Consultation</a>
               <a href="#services" className="btn btn-secondary">Explore Capabilities</a>
-              <a href="#contact" className="btn btn-accent">Request a Free Demo</a>
             </div>
 
             <div className="hero-cap-grid">
