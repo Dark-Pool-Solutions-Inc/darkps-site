@@ -12,6 +12,16 @@ export default function App() {
       ],
     },
     {
+      title: "Infrastructure Optimization",
+      text: "Performance tuning and optimization across server, storage, virtualization, and network environments to improve efficiency, reduce bottlenecks, and maximize ROI.",
+      bullets: [
+        "Server and compute optimization",
+        "Network performance and segmentation",
+        "Storage and throughput tuning",
+        "Capacity planning and scaling",
+      ],
+    },
+    {
       title: "AI Infrastructure, Governance & Automation",
       text: "End-to-end AI capabilities including infrastructure delivery, agentic workflows, governance, guardrails, compliance, and intelligent automation aligned with enterprise and operational systems.",
       bullets: [
@@ -32,6 +42,36 @@ export default function App() {
       ],
     },
     {
+      title: "Cloud Partnerships & Multi-Cloud Strategy",
+      text: "Architecture, deployment, and governance across public, private, and hybrid cloud environments designed for performance, cost control, and long-term scalability.",
+      bullets: [
+        "Cloud and hybrid architecture",
+        "Workload placement and cost optimization",
+        "Secure cloud networking and segmentation",
+        "Identity, access, and governance controls",
+      ],
+    },
+    {
+      title: "High-Performance Hosting & GPU Infrastructure",
+      text: "Dedicated high-performance hosting environments for AI, data-intensive, and mission-critical workloads including server, storage, networking, and GPU-enabled platforms.",
+      bullets: [
+        "Dedicated server and private hosting environments",
+        "GPU-enabled infrastructure for AI and model workloads",
+        "High-speed networking and storage platforms",
+        "Managed or client-controlled hosting options",
+      ],
+    },
+    {
+      title: "Business Continuity & Disaster Recovery",
+      text: "BCDR solutions aligned to Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO), with transparent recovery expectations across legacy, hybrid, and modern environments.",
+      bullets: [
+        "BCDR strategy and assessment",
+        "Recovery architecture and failover design",
+        "Backup, replication, and data protection",
+        "Testing, validation, and compliance alignment",
+      ],
+    },
+    {
       title: "Development, Testing & Deployment",
       text: "End-to-end solution delivery including prototyping, validation, secure deployment, and production rollout across infrastructure and AI systems.",
     },
@@ -47,9 +87,9 @@ export default function App() {
 
   const heroCapabilities = [
     "Cybersecurity Architecture",
-    "AI & Edge Infrastructure",
+    "AI & GPU Infrastructure",
+    "Cloud & Hosting Platforms",
     "Compliance & Governance",
-    "Networking & Connectivity",
     "Data Lifecycle Management",
     "Secure Decommissioning",
   ];
@@ -102,9 +142,10 @@ export default function App() {
 
           <nav className="nav">
             <a href="#services">Services</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#bcdr">BCDR</a>
             <a href="#lifecycle">Lifecycle</a>
             <a href="#about">About</a>
-            <a href="#why-dps">Why DPS</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -112,31 +153,36 @@ export default function App() {
 
       <section className="hero">
         <div className="container hero-grid">
-          <div><div className="pill">Architecture-Driven Automation</div>
+          <div>
+            <div className="pill">Architecture-Driven Automation</div>
 
-            <h1>
-              We architect the future of computing.
-            </h1>
+            <h1>We architect the future of computing.</h1>
 
             <p className="hero-copy">
-              Secure, AI-driven infrastructure and automation platforms designed to improve operations, reduce cost, and deliver long-term sustainable growth across enterprise and operational environments.
+              Secure, AI-driven infrastructure and automation platforms across cloud, edge, and dedicated environments—designed to improve operations, reduce cost, and deliver long-term sustainable growth.
             </p>
 
             <p className="hero-statement">
               Built on sound architecture. Optimized for performance, cost, and control.
             </p>
-            
+
             <div className="cta-row">
-            <a href="#contact" className="btn btn-accent">
-            Request a Free Demo
-            </a>
-              <a href="#contact" className="btn btn-primary">Schedule a Consultation</a>
-              <a href="#services" className="btn btn-secondary">Explore Capabilities</a>
+              <a href="#contact" className="btn btn-accent">
+                Request a Free Demo
+              </a>
+              <a href="#contact" className="btn btn-primary">
+                Schedule a Consultation
+              </a>
+              <a href="#services" className="btn btn-secondary">
+                Explore Capabilities
+              </a>
             </div>
 
             <div className="hero-cap-grid">
               {heroCapabilities.map((item) => (
-                <div key={item} className="mini-card">{item}</div>
+                <div key={item} className="mini-card">
+                  {item}
+                </div>
               ))}
             </div>
           </div>
@@ -148,7 +194,7 @@ export default function App() {
                 {[
                   "Cybersecurity architecture and risk reduction",
                   "AI-enabled business and operational workflows",
-                  "Virtualization, edge, and GPU-ready platforms",
+                  "Cloud, dedicated, and GPU-ready platforms",
                   "Data governance and compliance-driven delivery",
                 ].map((item) => (
                   <div key={item} className="focus-item">
@@ -167,7 +213,7 @@ export default function App() {
           <div className="section-kicker">Services</div>
           <h2>What DPS Delivers</h2>
           <p className="section-copy">
-            A cleaner service structure that explains your value quickly and positions the company as both a strategic advisor and a hands-on technical delivery team.
+            Architecture-driven services that combine cybersecurity, infrastructure, cloud, hosting, resilience, and AI platform delivery into a single enterprise-capable operating model.
           </p>
 
           <div className="card-grid">
@@ -184,6 +230,114 @@ export default function App() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="platforms" className="section section-alt">
+        <div className="container">
+          <div className="section-kicker">Cloud & Hosting Platforms</div>
+          <h2>Cloud partnerships and high-performance infrastructure delivery.</h2>
+          <p className="section-copy">
+            Dark Pool Solutions delivers secure cloud, dedicated hosting, and GPU-enabled infrastructure platforms designed for AI, high-performance applications, and cost-aligned long-term growth.
+          </p>
+
+          <div className="card-grid">
+            <div className="card">
+              <h3>Cloud Partnerships</h3>
+              <p>
+                Multi-cloud and hybrid architecture aligned to performance, compliance, and operational goals without unnecessary vendor lock-in.
+              </p>
+              <ul>
+                <li>Public, private, and hybrid cloud strategy</li>
+                <li>Secure cloud networking and segmentation</li>
+                <li>Identity, access, and governance integration</li>
+                <li>Cost and workload optimization</li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <h3>High-Performance Hosting</h3>
+              <p>
+                Dedicated server, storage, and network environments built for high-demand applications, secure isolated workloads, and enterprise performance requirements.
+              </p>
+              <ul>
+                <li>Dedicated hosting environments</li>
+                <li>Private infrastructure platforms</li>
+                <li>High-speed storage and networking</li>
+                <li>Managed or client-controlled deployments</li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <h3>GPU & AI Compute</h3>
+              <p>
+                GPU-enabled compute infrastructure for AI training, inference, distributed workloads, and data-intensive applications across cloud, edge, and dedicated environments.
+              </p>
+              <ul>
+                <li>GPU server platforms</li>
+                <li>AI training and inference environments</li>
+                <li>Distributed and edge AI deployments</li>
+                <li>Performance optimization and scaling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bcdr" className="section">
+        <div className="container">
+          <div className="section-kicker">Business Continuity & Disaster Recovery</div>
+          <h2>Recovery objectives over generic promises.</h2>
+          <p className="section-copy">
+            In Business Continuity and Disaster Recovery, there is no one-size-fits-all timeline. Legacy systems, hybrid environments, and modern cloud platforms all operate with different recovery constraints. At DPS, we design solutions around clearly defined Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
+          </p>
+          <p className="section-copy">
+            This gives organizations a transparent understanding of how quickly services can be restored, how much data can be recovered, and what level of continuity is realistically achievable. Our disaster recovery performance is directly driven by underlying infrastructure optimization—ensuring failover systems operate at peak efficiency with minimal latency and maximum reliability.
+          </p>
+
+          <div className="card-grid">
+            <div className="card">
+              <h3>BCDR Strategy & Assessment</h3>
+              <p>
+                Comprehensive evaluation of existing infrastructure, risks, failure domains, and resilience gaps with RTO/RPO targets aligned to business and compliance requirements.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Disaster Recovery Architecture</h3>
+              <p>
+                Design and implementation of resilient architectures across on-prem, hybrid, and cloud environments, including failover systems, replication, and automated recovery workflows.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>High Availability & Failover</h3>
+              <p>
+                Clustered systems, redundancy planning, and failover architecture designed to minimize downtime and maintain continuity for critical workloads.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Backup & Data Protection</h3>
+              <p>
+                Policy-driven backup, encryption, versioning, and rapid recovery solutions designed to meet strict RPO targets and reduce exposure to ransomware and data loss.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Cloud & Hybrid DR</h3>
+              <p>
+                Warm, cold, and hybrid standby environments with cloud failover and infrastructure replication aligned to workload criticality and budget.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Testing & Compliance Validation</h3>
+              <p>
+                Regular recovery testing, audit support, and compliance alignment with NIST, SOC 2, HIPAA, PCI, and other governance frameworks.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -212,32 +366,36 @@ export default function App() {
           <div className="section-kicker">About</div>
           <h2>Built for clients that need security, performance, and execution.</h2>
           <p className="section-copy">
-            Dark Pool Solutions is a cybersecurity and advanced infrastructure consulting firm focused on secure computing environments for enterprise and operational technology systems, with strong capabilities in AI integration, governance, data lifecycle management, and secure decommissioning.
+            Dark Pool Solutions is a cybersecurity and advanced infrastructure consulting firm focused on secure computing environments for enterprise and operational technology systems, with strong capabilities in AI integration, governance, infrastructure optimization, cloud and hosting platforms, data lifecycle management, resilience engineering, and secure decommissioning.
           </p>
         </div>
       </section>
-<section id="why-dps" className="section why-section">
-  <div className="container">
-    <div className="why-wrap">
-      <div className="pill">Why DPS</div>
-      <h3 className="why-title">
-        Many organizations hesitate due to uncertainty around AI. We remove that uncertainty—architecting secure, scalable solutions that optimize resources, align to budget, and deliver measurable ROI through disciplined governance.
-      </h3>
-      <div className="why-grid">
-        {whyPoints.map((item) => (
-          <div key={item} className="mini-card">{item}</div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+
+      <section id="why-dps" className="section why-section">
+        <div className="container">
+          <div className="why-wrap">
+            <div className="pill">Why DPS</div>
+            <h3 className="why-title">
+              Many organizations hesitate due to uncertainty around AI. We remove that uncertainty—architecting secure, scalable solutions that optimize resources, align to budget, and deliver measurable ROI through disciplined governance.
+            </h3>
+            <div className="why-grid">
+              {whyPoints.map((item) => (
+                <div key={item} className="mini-card">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="section section-alt">
         <div className="container contact-grid">
           <div>
             <div className="section-kicker">Contact</div>
             <h2>Let’s build something secure, scalable, and production-ready.</h2>
             <p className="section-copy">
-              Whether you need cybersecurity guidance, AI deployment support, infrastructure modernization, or compliance-focused technical delivery, DPS can assist.
+              Whether you need cybersecurity guidance, AI deployment support, infrastructure modernization, hosting, or compliance-focused technical delivery, DPS can assist.
             </p>
 
             <div className="info-card">
@@ -257,7 +415,7 @@ export default function App() {
           </div>
 
           <div className="form-card">
-          <form action="https://formspree.io/f/xjgpbwbz" method="POST" className="form">
+            <form action="https://formspree.io/f/xjgpbwbz" method="POST" className="form">
               <div className="form-row">
                 <div>
                   <label htmlFor="name">Name</label>
@@ -291,9 +449,11 @@ export default function App() {
               </div>
 
               <div className="form-actions">
-                <button type="submit" className="btn btn-primary">Send Inquiry</button>
+                <button type="submit" className="btn btn-primary">
+                  Send Inquiry
+                </button>
                 <div className="form-note">
-                  Form submission wiring can be connected to Formspree, Web3Forms, or your preferred backend during deployment.
+                  Secure inquiry submission powered by Formspree.
                 </div>
               </div>
             </form>
