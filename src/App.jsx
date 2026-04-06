@@ -108,7 +108,7 @@ export default function App() {
       text: "Security hardening, monitoring, IDS/IPS deployment, firewall architecture, and compliance-aligned controls.",
     },
     {
-      title: "Operate",
+      title: "Operations ",
       text: "Operational support, monitoring, governance enforcement, performance optimization, and infrastructure management.",
     },
     {
@@ -117,7 +117,7 @@ export default function App() {
     },
     {
       title: "Decommission",
-      text: "Secure retirement of infrastructure including archival, backup preservation, data classification review, and secure deletion.",
+      text: "Secure retirement of infrastructure, including archival, backup preservation, data classification review, and secure deletion.",
     },
   ];
 
