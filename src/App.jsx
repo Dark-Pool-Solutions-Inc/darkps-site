@@ -53,6 +53,16 @@ export default function App() {
       ],
     },
     {
+      title: "Neocloud Architecture, Deployment & Optimization",
+      text: "Architecture and deployment of GPU-focused cloud and private AI environments, optimized for workload performance, infrastructure utilization, and total cost of ownership.",
+      bullets: [
+        "GPU compute, networking, and storage architecture",
+        "AI training and inference platform deployment",
+        "Workload placement, right-sizing, and performance tuning",
+        "Capacity planning and infrastructure cost optimization",
+      ],
+    },
+    {
       title: "High-Performance Hosting & GPU Infrastructure",
       text: "Dedicated high-performance hosting environments for AI, data-intensive, and mission-critical workloads including server, storage, networking, and GPU-enabled platforms.",
       bullets: [
@@ -202,7 +212,7 @@ export default function App() {
 
           <div className="card-grid">
             {services.map((service) => (
-              <div key={service.title} className="card">
+              <div key={service.title} id={service.title.startsWith("Neocloud") ? "neocloud" : undefined} className="card">
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
                 {service.bullets && (

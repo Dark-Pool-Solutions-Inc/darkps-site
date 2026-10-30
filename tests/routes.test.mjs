@@ -22,11 +22,11 @@ test('home and assessment routes preserve content, accessible structure, and for
         assert.ok(ids.includes(target), `Anchor ${target} resolves`);
       }
       if (pathname === '/') {
-        for (const title of ['Cybersecurity Services', 'Infrastructure Optimization', 'AI Infrastructure, Governance &amp; Automation', 'Infrastructure &amp; Edge Platforms', 'Cloud Partnerships &amp; Multi-Cloud Strategy', 'High-Performance Hosting &amp; GPU Infrastructure', 'Business Continuity &amp; Disaster Recovery', 'Development, Testing &amp; Deployment', 'Data Management', 'Compliance &amp; Governance', 'Decommission']) {
+        for (const title of ['Neocloud Architecture, Deployment &amp; Optimization', 'Cybersecurity Services', 'Infrastructure Optimization', 'AI Infrastructure, Governance &amp; Automation', 'Infrastructure &amp; Edge Platforms', 'Cloud Partnerships &amp; Multi-Cloud Strategy', 'High-Performance Hosting &amp; GPU Infrastructure', 'Business Continuity &amp; Disaster Recovery', 'Development, Testing &amp; Deployment', 'Data Management', 'Compliance &amp; Governance', 'Decommission']) {
           assert.ok(html.includes(title), `Preserved ${title}`);
         }
       } else {
-        for (const domain of ['Power &amp; cooling', 'Networking &amp; load balancing', 'virtualization', 'Storage &amp; data protection', 'failover testing', 'critical-system validation', 'Automated documentation']) {
+        for (const domain of ['Power &amp; cooling', 'Networking &amp; load balancing', 'virtualization', 'Storage &amp; data protection', 'failover testing', 'critical-system validation', 'Automated documentation', 'Neocloud architecture, deployment &amp; optimization']) {
           assert.ok(html.includes(domain), `Covers ${domain}`);
         }
         assert.match(html, /action="https:\/\/formspree.io\/f\/xjgpbwbz"/);
