@@ -54,12 +54,13 @@ export default function App() {
     },
     {
       title: "Neocloud Architecture, Deployment & Optimization",
-      text: "Architecture and deployment of GPU-focused cloud and private AI environments, optimized for workload performance, infrastructure utilization, and total cost of ownership.",
+      text: "Assess neocloud offerings and design and deploy GPU-focused cloud and private AI environments. Compare workload performance, infrastructure utilization, and total cost of ownership to select the right fit.",
       bullets: [
         "GPU compute, networking, and storage architecture",
         "AI training and inference platform deployment",
         "Workload placement, right-sizing, and performance tuning",
         "Capacity planning and infrastructure cost optimization",
+        "Provider and configuration comparisons: cost versus workload performance",
       ],
     },
     {
