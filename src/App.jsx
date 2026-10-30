@@ -1,5 +1,6 @@
+import { Header, Feature, OptimizationPage, Footer } from "./Optimization";
 export default function App() {
-  const logoSrc = "/logo.png";
+  if (window.location.pathname.replace(/\/$/, "") === "/ai-data-center-optimization") return <OptimizationPage />;
 
   const services = [
     {
@@ -49,6 +50,17 @@ export default function App() {
         "Workload placement and cost optimization",
         "Secure cloud networking and segmentation",
         "Identity, access, and governance controls",
+      ],
+    },
+    {
+      title: "Neocloud Architecture, Deployment & Optimization",
+      text: "Assess neocloud offerings and design and deploy GPU-focused cloud and private AI environments. Compare workload performance, infrastructure utilization, and total cost of ownership to select the right fit.",
+      bullets: [
+        "GPU compute, networking, and storage architecture",
+        "AI training and inference platform deployment",
+        "Workload placement, right-sizing, and performance tuning",
+        "Capacity planning and infrastructure cost optimization",
+        "Provider and configuration comparisons: cost versus workload performance",
       ],
     },
     {
@@ -129,28 +141,8 @@ export default function App() {
 
   return (
     <div className="page">
-      <header className="site-header">
-        <div className="container header-inner">
-          <div className="brand">
-            <div className="logo-wrap">
-              <img src={logoSrc} alt="Dark Pool Solutions" className="logo" />
-            </div>
-            <div className="brand-tagline">
-              Cybersecurity <span>•</span> Infrastructure <span>•</span> AI
-            </div>
-          </div>
-
-          <nav className="nav">
-            <a href="#services">Services</a>
-            <a href="#platforms">Platforms</a>
-            <a href="#bcdr">BCDR</a>
-            <a href="#lifecycle">Lifecycle</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
-
+      <Header />
+      <main id="main">
       <section className="hero">
         <div className="container hero-grid">
           <div>
@@ -167,8 +159,8 @@ export default function App() {
             </p>
 
             <div className="cta-row">
-              <a href="#contact" className="btn btn-accent">
-                Request a Free Demo
+              <a href="/ai-data-center-optimization#assessment" className="btn btn-accent">
+                Request an Assessment
               </a>
               <a href="#contact" className="btn btn-primary">
                 Schedule a Consultation
@@ -188,6 +180,7 @@ export default function App() {
           </div>
 
           <div className="focus-panel">
+            <div className="panel-label">DPS / ENTERPRISE ARCHITECTURE</div>
             <div className="focus-inner">
               <div className="section-kicker">Core Focus</div>
               <div className="focus-list">
@@ -208,6 +201,8 @@ export default function App() {
         </div>
       </section>
 
+      <Feature />
+
       <section id="services" className="section">
         <div className="container">
           <div className="section-kicker">Services</div>
@@ -218,7 +213,7 @@ export default function App() {
 
           <div className="card-grid">
             {services.map((service) => (
-              <div key={service.title} className="card">
+              <div key={service.title} id={service.title.startsWith("Neocloud") ? "neocloud" : undefined} className="card">
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
                 {service.bullets && (
@@ -405,11 +400,11 @@ export default function App() {
               </div>
               <div>
                 <div className="info-label">Sales</div>
-                <div className="info-value">sales@darkps.com</div>
+                <a className="info-value" href="mailto:sales@darkps.com">sales@darkps.com</a>
               </div>
               <div>
                 <div className="info-label">Phone</div>
-                <div className="info-value">(212) 439-0704</div>
+                <a className="info-value" href="tel:+12124390704">(212) 439-0704</a>
               </div>
             </div>
           </div>
@@ -419,11 +414,11 @@ export default function App() {
               <div className="form-row">
                 <div>
                   <label htmlFor="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" />
+                  <input id="name" name="name" required autoComplete="name" type="text" placeholder="Your name" />
                 </div>
                 <div>
                   <label htmlFor="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="you@company.com" />
+                  <input id="email" name="email" required autoComplete="email" type="email" placeholder="you@company.com" />
                 </div>
               </div>
 
@@ -460,6 +455,8 @@ export default function App() {
           </div>
         </div>
       </section>
+      </main>
+      <Footer />
     </div>
   );
 }
