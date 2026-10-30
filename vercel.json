@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/ai-data-center-optimization", "destination": "/index.html" }]
+}
